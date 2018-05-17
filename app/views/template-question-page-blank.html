@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="/url/of/previous/page">Back</a>
+
+      <h1 class="heading-large">Tell us a bit about yourself.
+      </h1>
+      <div class="form-group">
+
+     <p>This is voluntary and will not affect your application.</p>
+
+  <label class="form-label" for="full-name-f1">Full name</label>
+  <input class="form-control" id="full-name-f1" type="text" name="full-name-f1">
+</div>
+<div class="form-group">
+  <label class="form-label" for="full-name-f1">Age</label>
+  <input class="form-control" id="full-name-f1" type="text" name="full-name-f1">
+</div>
+<div class="form-group">
+  <label class="form-label" for="full-name-f1">Nationality</label>
+  <input class="form-control" id="full-name-f1" type="text" name="full-name-f1">
+</div>
+
+      <form class="form" action="/url/of/next/page" method="post">
+
+  
+
+        <p>[See <a href="https://govuk-elements.herokuapp.com/form-elements/">GOV.UK Elements</a> for examples]</p>
+
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
